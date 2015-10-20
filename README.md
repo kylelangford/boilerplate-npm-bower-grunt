@@ -1,19 +1,24 @@
 # npm-boilerplate
-package.json boilerplate for starting front-end web applications
 
-To start a node module run
+To start a generic package.json run
+
+```
 $ npm init
 
+```
+
+package.json boilerplate for starting front-end web applications
+
+
+```
 {
   "name": "Boilerplate",
-  "version": "0.0.1",
-  "description": "A minimal starting theme",
+  "version": "0.0.0",
+  "description": "A list of devDependencies",
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Boilerplate",
-  "license": "MIT",
   "devDependencies": {
     "grunt": "~0.4.5",
     "grunt-contrib-uglify": "~0.9.1",
@@ -21,3 +26,5 @@ $ npm init
     "grunt-sass": "~0.18.1"
   }
 }
+
+```
