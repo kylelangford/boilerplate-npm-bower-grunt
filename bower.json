@@ -1,0 +1,48 @@
+{
+  "name": "Mint Energy",
+  "description": "Esitmator Tool",
+  "main": "index.php",
+  "authors": [
+    "Kyle Langford"
+  ],
+  "license": "MIT",
+  "moduleType": [],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bourbon": "~4.2.6",
+    "neat": "~1.7.2",
+    "jquery": "~2.1.4",
+    "normalize-css": "normalize.css#~3.0.3",
+    "jquery-validation": "~1.14.0",
+    "jquery-ui": "~1.11.4"
+  },
+  "install": {
+    "path": {
+      "js": "app/js",
+      "/[sc|le]ss$/": "app/scss",
+      "css": "app/scss"
+    },
+    "sources": {
+      "bourbon": "bower_components/bourbon/app/assets/stylesheets/**",
+      "neat": "bower_components/neat/app/assets/stylesheets/**",
+      "jquery": "bower_components/jquery/dist/**",
+      "jquery-validation": "bower_components/jquery-validation/dist/**",
+      "jquery-ui": "bower_components/jquery-validation/jquery-ui.js",
+      "normalize-css": {
+        "mapping": [
+          {
+            "bower_components/normalize-css/normalize.css": "_normalize.scss"
+          }
+        ]
+      }
+    }
+  }
+}

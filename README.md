@@ -1,30 +1,61 @@
-# npm-boilerplate
+# npm-bower-grunt-boilerplate
 
-To start a generic package.json run
+Sass / Normalize + Bourbon + Neat / Grunt.js / Modernizr.js / jQuery
+
+
+You will need bower-installer to run the bower install script
+```
+$ npm install bower-installer -g
 
 ```
-$ npm init
+
+To Scaffold Project
+
+Resolve NPM Dependencies
+```
+$ npm install
 
 ```
 
-package.json boilerplate for starting front-end web applications
-
+Download front-end Libraries and scaffold app directory
+```
+$ bower install
 
 ```
-{
-  "name": "Boilerplate",
-  "version": "0.0.0",
-  "description": "A list of devDependencies",
-  "main": "index.html",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "devDependencies": {
-    "grunt": "~0.4.5",
-    "grunt-contrib-uglify": "~0.9.1",
-    "grunt-contrib-watch": "~0.6.1",
-    "grunt-sass": "~0.18.1"
-  }
-}
+
+Test and make sure the grunt file is working
+```
+$ cd app
+$ grunt
+
+```
+
+Build Development files
+```
+$ grunt
+
+```
+
+Build Production files
+```
+$ grunt build
+
+```
+
+Watch for JS and CSS Changes
+```
+$ grunt watch
+
+```
+
+Clean JS and CSS Directories
+```
+$ grunt clean
+
+```
+
+Run JSHint
+```
+$ grunt test
 
 ```
